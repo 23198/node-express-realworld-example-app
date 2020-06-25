@@ -10,9 +10,9 @@ phases:
       #- curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
       #- echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
       #- apt install --no-install-recommends yarn
-  #pre_build:
-   # commands:
-      #- echo setting...mongo 
+  pre_build:
+    commands:
+      - echo setting...mongo 
       - echo $Name > uri.txt
       #- npm i -g @angular/cli
   build:
