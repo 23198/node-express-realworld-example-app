@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /apps
-#export MONGODB_URI=$( cat /apps/uri.txt )
+export MONGODB_URI=$( cat /apps/uri.txt )
 # export NODE_ENV=production
 # export SECRET=secret
 sudo apt-get update -y
