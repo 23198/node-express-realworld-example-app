@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /apps
+    
+hooks:  
+  ApplicationStop:
+    - location: Appstop.sh       
+      runas: root
+  ApplicationStart:
+    - location: Appstart.sh
+      runas: root
