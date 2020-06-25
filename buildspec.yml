@@ -13,7 +13,7 @@ phases:
   #pre_build:
    # commands:
       #- echo setting...mongo 
-      #- echo mongodb://"${aws_instance.mongo-test1.private_ip}","${aws_instance.mongo-test2.private_ip}","${aws_instance.mongo-test3.private_ip}"/?replicaSet=rs0 > uri.txt
+      - echo $Name > uri.txt
       #- npm i -g @angular/cli
   build:
     commands:
