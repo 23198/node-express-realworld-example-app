@@ -1,0 +1,32 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - echo installing nodejs....working.......on.....it.........
+      - curl -sL https://deb.nodesource.com/setup_12.x | bash -
+      - apt-get install -y nodejs
+      #- echo installing yarn...again...do...it.....we..
+      #- curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+      #- echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+      #- apt install --no-install-recommends yarn
+  #pre_build:
+   # commands:
+      #- echo setting...mongo 
+      #- echo mongodb://"${aws_instance.mongo-test1.private_ip}","${aws_instance.mongo-test2.private_ip}","${aws_instance.mongo-test3.private_ip}"/?replicaSet=rs0 > uri.txt
+      #- npm i -g @angular/cli
+  build:
+    commands:
+      # - echo testing...dubara......phirse
+      - echo building...
+      - npm install
+       
+  post_build:
+    commands:
+      - chmod +x Appstop.sh Appstart.sh  
+       
+artifacts:
+  files:
+    - "**/*"
+  #discard-paths: no
+  #base-directory: dist
