@@ -1,6 +1,6 @@
 #!/bin/bash
 #cd /apps
-export MONGODB_URI=$( cat /apps/uri.txt )
+export MONGODB_URI="$( cat /apps/uri.txt )"
 echo $MONGODB_URI
 echo "RUNNING"
 # export NODE_ENV=production
