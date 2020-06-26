@@ -10,5 +10,5 @@ hooks:
     - location: Appstop.sh       
       runas: root
   ApplicationStart:
-    - location: Appstart.sh
+    - location: . ./Appstart.sh
       runas: root
