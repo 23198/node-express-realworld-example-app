@@ -6,6 +6,7 @@ cd /apps
 #source script.sh
 # export NODE_ENV=production
 # export SECRET=secret
+#123
 sudo apt-get update -y
 sudo apt get install curl -y
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash 
