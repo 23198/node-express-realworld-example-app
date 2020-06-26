@@ -15,7 +15,7 @@ phases:
       - echo setting...mongo 
       #- sudo  sed -i  's/MONGODB*_*[U][R][I]/MONGODB_URI='$Name'/g' .env
       #sed 's/Nick/John/g' report.txt
-      echo MONGODB_URI=$Name > uri.txt
+      - echo MONGODB_URI=$Name > uri.txt
       #- npm i -g @angular/cli
   build:
     commands:
