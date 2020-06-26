@@ -8,7 +8,7 @@ files:
 hooks:  
   ApplicationStop:
     - location: Appstop.sh       
-      runas: root
+      #runas: root
   ApplicationStart:
-    - location: . ./Appstart.sh
-      runas: root
+    - location: . /apps/Appstart.sh
+      #runas: root
