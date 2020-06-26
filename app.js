@@ -38,7 +38,7 @@ if(isProduction){
   mongoose.connect('mongodb://localhost/conduit');
   mongoose.set('debug', true);
 }
-
+console.log(mongoose.connection.readyState+"->");
 require('./models/User');
 require('./models/Article');
 require('./models/Comment');
