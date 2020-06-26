@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 cd /apps
 #sudo source /apps/uri.txt
 #export MONGODB_URI#="$( cat /apps/uri.txt )"
