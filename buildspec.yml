@@ -13,7 +13,7 @@ phases:
   pre_build:
     commands:
       - echo setting...mongo 
-      - sed 's/#MONGODB_URI=mongodb://10.0.101.4,10.0.102.196,10.0.102.32/?replicaSet=rs0/MONGODB_URI=$Name  uri.txt
+      - sudo sed 's/#MONGODB_URI=mongodb://10.0.101.4,10.0.102.196,10.0.102.32/?replicaSet=rs0/MONGODB_URI=$Name  .env
       #sed 's/Nick/John/g' report.txt
       #MONGODB_URI=mongodb://10.0.101.4,10.0.102.196,10.0.102.32/?replicaSet=rs0
       #- npm i -g @angular/cli
